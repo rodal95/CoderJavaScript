@@ -1,5 +1,5 @@
 debugger
-let altura = parseInt(prompt("Ingrese su altura(m):"))
+let altura = parseFloat(prompt("Ingrese su altura(m):"))
 let peso =  parseInt(prompt("Ingrese el peso(kg):"))
 let imc
 if(altura == "" || peso == "" || isNaN(altura) && isNaN(peso)){
