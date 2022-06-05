@@ -11,19 +11,19 @@ function calcularIMC(altura, peso){
     calcularIMC(altura, peso)
 
     if (imc < 18.5) {
-        alert("Su peso es de " + peso + " y usted esta bajo de peso.");
+        alert("Su peso es de " + peso + " kg y usted esta bajo de peso.");
     }
     else if(imc >= 18.5 && imc <= 24.9){
-        alert("Su peso es de " + peso + " y usted esta en su peso ideal.");
+        alert("Su peso es de " + peso + " kg y usted esta en su peso ideal.");
     }
     else if(imc >= 25 && imc <= 29.9){
-        alert("Su peso es de " + peso + " y usted esta con sobrepeso.");
+        alert("Su peso es de " + peso + " kg y usted esta con sobrepeso.");
     }
     else if(imc >= 30 && imc <= 39.9){
-        alert("Su peso es de " + peso + " y usted esta con obesidad.");
+        alert("Su peso es de " + peso + " kg y usted esta con obesidad.");
     }
     else if(imc >= 40){
-        alert("Su peso es de " + peso + " y usted esta con obesidad morbida.");
+        alert("Su peso es de " + peso + " kg y usted esta con obesidad morbida.");
     }
 }
 
