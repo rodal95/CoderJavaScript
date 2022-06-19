@@ -31,7 +31,21 @@ function cargoarrayobj() {
 }
 
 cargoarrayobj()
+const lista = document.getElementById("lista")
+function muestraprodhtml(){
+    debugger
+    lista.innerHTML=""
+    for(servicio of servicios){
+    const fila = `<tr>
+                            <td>${servicio.codigo}</td>
+                            <td>${servicio.desc}</td>
+                            <td>${servicio.precio}</td>
+                </tr>`
+                lista.innerHTML +=fila
+    }
 
+}
+muestraprodhtml()
 
 const carrito1 = [{codigo:101,descripcion:"portaretrato", precio: 500},{codigo:102,descripcion:"portatabvla", precio: 700},{codigo:103,descripcion:"tratera", precio: 800}]
 

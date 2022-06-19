@@ -38,6 +38,23 @@ function generadorAutomatico() {
     productos.push(new Producto(6789, "MACBOOK PRO 15", 459000))
     productos.push(new Producto(7890, "ASUS GAMING PRO 17", 679800))//productos.push(new Producto(7890, "IPAD MINI 7.9", 189900))
 }
+generadorAutomatico()
+
+
+const lista = document.getElementById("lista")
+
+function muestraprodhtml(){
+    debugger
+    lista.innerHTML=""
+    for(elemento of productos){
+    const fila = `<tr>
+                            <td>${elemento.id}</td>
+                            <td>${elemento.nombre}</td>
+                            <td>${elemento.importe}</td>
+                </tr>`
+                lista.innerHTML += fila
+    }
+}
 
 function recorrerarrayprod(){
     debugger
@@ -45,7 +62,7 @@ function recorrerarrayprod(){
         console.table(elemento)
     }
 }
-
+muestraprodhtml()
 
 function iterararray(){
     productos.forEach(p =>{console.table(p)})
@@ -84,4 +101,3 @@ function calcularcarrito(){
     console.table(total)
 }
 
-generadorAutomatico()
