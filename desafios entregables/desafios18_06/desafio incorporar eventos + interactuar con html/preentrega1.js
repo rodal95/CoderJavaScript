@@ -17,16 +17,21 @@ class EspecialidadJuridica{
     }
 }
 const especialidades = []
-const servjur = document.getElementsByClassName("servjur")
-debugger
+const servjur = document.getElementsByClassName("servjur")[0]
+
+
+
 function cargarServicios(){
     servicios.push(new ServiciosJuridicos(100,"REPRESENTACION LEGAL", "$"+5000))
     servicios.push(new ServiciosJuridicos(101,"CONSULTA", "$"+8000))
     servicios.push(new ServiciosJuridicos(102,"MEDIACION", "$"+2000))
     servicios.push(new ServiciosJuridicos(103,"ESCRIBANIA", "$"+3000))
-    for(elemento of especialidades){
-        const servjur = document.createElement("li")
-        servjur.innerText= elemento.descripcion}
+    for(elemento of servicios){
+        
+        const service = document.createElement("li")
+        service.innerText= `${elemento.descripcion}`
+        servjur.append(service)
+    }
 }
 cargarServicios()
 
