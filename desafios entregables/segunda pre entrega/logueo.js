@@ -39,7 +39,7 @@ const guardarEnLocal = (obj) => {
     }else{
         const datosLocales = JSON.parse(localStorage.getItem("registro"))
         datosLocales.push(obj)
-        usuarios = datosLocales//TA MAL
+        usuarios = datosLocales
         localStorage.setItem("registro", JSON.stringify(usuarios))
     }
 }
@@ -47,7 +47,7 @@ const guardarEnLocal = (obj) => {
 const verSiHayCosas = ()=>{
     if(localStorage.getItem("registro") !== null){
         const datosLocales = JSON.parse(localStorage.getItem("registro"))
-        usuarios = datosLocales//TA MAL  
+        usuarios = datosLocales
     }
 }
 
